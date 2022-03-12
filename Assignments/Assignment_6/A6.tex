@@ -34,9 +34,32 @@ urlcolor=blue
 \maketitle
 
 \section*{\hfil Problem 1}
+\subsection*{$V_{2}^+ = 0$}
+\begin{gather}
+\Gamma _{L1} = \frac{\frac{Z_L}{Z_0}-1}{\frac{Z_L}{Z_0}+1} = \frac{1}{21}\\
+\implies \frac{V_1^-}{V_1^+} = \tcbhighmath[drop fuzzy shadow]{S_{11} = \frac{1}{21}}
+\end{gather}
 
+Since source at Port 2 is macthing network then,
+\begin{gather}
+V_2^- = (V_1^+ + V_1^-)\frac{50}{50 + 5}\\
+\frac{V_2^- }{V_1^+} = S_{12} = (S_{11} + 1)\frac{10}{11}\\
+\implies S_{12} = \tcbhighmath[drop fuzzy shadow]{\frac{310}{231}}
+\end{gather}
+\subsection*{$V_{1}^+ = 0$}
+The above network is clearly symmentric which means rows of scattering matrix are same.
+\begin{equation}
+\tcbhighmath[drop fuzzy shadow]{\mathbf{S} = \begin{bmatrix}
+\frac{1}{21} & \frac{310}{231}\\
+\frac{1}{21} & \frac{310}{231}
+\end{bmatrix}}
+\end{equation}
 \section*{\hfil Problem 2}
 
 \section*{\hfil Problem 3}
-
+At 
+We know that,
+\begin{equation}
+	Z_{in}(x) = Z_0\left[\frac{1 + \Gamma _Le^{2\gamma x}}{1 - \Gamma _Le^{2\gamma x}}\right]
+\end{equation}
 \end{document}
