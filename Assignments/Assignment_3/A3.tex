@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage{xspace}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usetikzlibrary{babel}
+\usepackage[american]{circuitikz}
+\usetikzlibrary{calc}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\usepackage[skins,theorems]{tcolorbox}
+\tcbset{highlight math style={enhanced,
+  colframe=red,colback=white,arc=0pt,boxrule=1pt}}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated PDF file
+\hypersetup{
+colorlinks=true,       % false: boxed links; true: colored links
+linkcolor=blue,        % color of internal links
+citecolor=blue,        % color of links to bibliography
+filecolor=magenta,     % color of file links
+urlcolor=blue        
+}
+
+\begin{document}
+
+\title{{\textbf{ASSIGNMENT 3}}}
+\author{\textbf{TADIPATRI UDAY KIRAN REDDY}\\\textbf{EE19BTECH11038}}
+\maketitle
+
+\section*{\hfil Problem 1}
+From previous assignment we found out that, Characterstic impedance is $\sqrt{\frac{R + j{\omega}L}{G + j{\omega}C}}$. Here it is given that $\frac{L}{R} = \frac{C}{G}$ which means $\mathbf{z_0 = \sqrt{\frac{R}{G}} \si{\ohm}}$.\\
+Propagation constant is $\gamma = \sqrt{(R + j\omega L)(G + j \omega C)} = \sqrt{RG} + j\omega \sqrt{LC} = \alpha + j\beta$\\
+Phase velocity is $V_p = \frac{\omega}{\beta} = 1/\sqrt{LC}$\\
+\begin{list}{•}{\textbf{Observations}}
+\item The characterstic impedance of the line is purely resistive.
+\item $z_0$ does not depend on the frequency of operation.
+\item $\alpha$ is frequency independent.
+\item $\beta$ is linear function of $\omega$.
+\item Phase velocity is same at all frequency which means the line is \textbf{Distortion less}.
+\end{list}
+
+\section*{\hfil Problem 2}
+Given lossless transmission line with a load $Z_L$
+\begin{gather*}
+Z_{in}(x) = z_0\frac{1 + \Gamma _Le^{-2\gamma x}}{1 - \Gamma _Le^{-2\gamma x}} \\
+\Gamma _L = \frac{Z_L - z_0}{Z_L + z_0}\\
+Z_{in}(-l/4) = z_0\frac{1 + \Gamma _Le^{2 j\frac{2 \pi}{\lambda}\frac{\lambda}{4}}}{1 - \Gamma _Le^{2 j\frac{2 \pi}{\lambda}\frac{\lambda}{4}}}\\
+\implies Z_{in} = z_0 \frac{1 - \frac{Z_L - z_0}{Z_L + z_0}}{1 + \frac{Z_L - z_0}{Z_L + z_0}}\\
+\implies \tcbhighmath[drop fuzzy shadow]{Z_{in} = \frac{z_0^2}{Z_L}} 
+\end{gather*}
+\section*{\hfil Problem 3}
+First we calculate $Z_{in}$.
+\begin{gather*}
+Z_{in}(-l) = z_0\frac{1 + \Gamma _Le^{2\gamma l}}{1 - \Gamma _Le^{2\gamma l}}\\
+\end{gather*}
+\begin{gather}
+\implies \tcbhighmath[drop fuzzy shadow]{V_{in} = V_s\frac{Z_{in}}{z_0 + Z_{in}} = V_s\frac{1 + \Gamma _Le^{2\gamma l}}{2}}\\
+V_o = V(0)\\
+V_{in} = V(-l)\\
+\implies \frac{V_o}{V_{in}} = \frac{V_o^+(1 + \Gamma _L)}{V_o^+e^{- \gamma l}(1 + \Gamma _L e^{2\gamma l})} = \frac{1 + \Gamma _L}{e^{- \gamma l} +e^{\gamma l} \Gamma _L}\\
+\implies \tcbhighmath[drop fuzzy shadow]{V_o = V_s\frac{1 + \Gamma _L}{2}e^{\gamma l}}
+\end{gather}
+For maximising $V_o$,
+\begin{gather}
+	\frac{\partial V_o}{\partial Z_L} = 0\\
+	\frac{\partial \left({V_s\frac{Z_L}{Z_L + z_o}e^{\gamma l}}\right)}{\partial Z_L} = 0\\
+	\implies \frac{1}{(Z_L + z_o)^2} = 0\\
+	\implies \tcbhighmath[drop fuzzy shadow]{Z_L \to \infty}\\
+	\frac{\partial ^2 V_o}{\partial Z_L^2}  @ {Z_L \to \infty} < 0 \implies \text{It is local maxima.}
+\end{gather}
+Thus the keeping a open circuit near load will maximise the $\tcbhighmath[drop fuzzy shadow]{V_o = V_se^{\gamma l}}$ and corresponding $\tcbhighmath[drop fuzzy shadow]{V_{in} = V_s\frac{1 + e^{2\gamma l}}{2}}$
+\end{document}

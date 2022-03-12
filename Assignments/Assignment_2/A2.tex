@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage{xspace}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usetikzlibrary{babel}
+\usepackage[american]{circuitikz}
+\usetikzlibrary{calc}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\usepackage[skins,theorems]{tcolorbox}
+\tcbset{highlight math style={enhanced,
+  colframe=red,colback=white,arc=0pt,boxrule=1pt}}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated PDF file
+\hypersetup{
+colorlinks=true,       % false: boxed links; true: colored links
+linkcolor=blue,        % color of internal links
+citecolor=blue,        % color of links to bibliography
+filecolor=magenta,     % color of file links
+urlcolor=blue        
+}
+
+\begin{document}
+
+\title{{\textbf{ASSIGNMENT 2}}}
+\author{\textbf{TADIPATRI UDAY KIRAN REDDY}\\\textbf{EE19BTECH11038}}
+\maketitle
+
+\section*{\hfil Problem 1}
+\begin{figure}[H]
+\centering
+\begin{circuitikz}[american]
+\draw (0,-0.0) to[short, i=$I(x-\Delta x)$] (1,-0.0);
+\draw (1,-0.0) to[L,l=$L{\Delta x}$] (3,-0.0);
+\draw (3,-0.0) to[R,l=$R{\Delta x}$] (5,-0.0);
+\draw (5,-0.0) to[short, i=$I(x)$] (7,-0.0);
+\draw (5,-0.0) to[short, i=$I(x-\Delta x)-I(x)$] (5,-1.0);
+\draw (4,-1.0) to[R,l=$G{\Delta x}$] (4,-3.0);
+\draw (6,-1.0) to[C,l=$C{\Delta x}$] (6,-3.0);
+\draw (4,-1.0) to[short] (6,-1.0);
+\draw (4,-3.0) to[short] (6,-3.0);
+\draw (5,-3.0) to[short] (5,-4.0);
+\draw (5,-4.0) to[short] (7,-4.0);
+\draw (5,-4.0) to[short] (0,-4.0);
+
+\draw (0, 0) to [open, v=$V(x- {\Delta x})$] (0, -4);
+\draw (9, 0) to [open, v=$V(x)$] (9, -4);
+\end{circuitikz}
+\end{figure}
+
+By KVL.
+\begin{gather}
+V(s, x - {\Delta}x) = \left(sL+R\right){\Delta}xI(s, x - {\Delta}x) + V(s, x)\\
+\implies \frac{V(s, x - {\Delta}x) - V(s, x)}{\Delta x} = \left(sL+R\right)I(s, x - {\Delta}x)
+\end{gather}
+As $\Delta x -> 0$,
+\begin{equation}
+	\frac{\partial V(x)}{\partial x} = \left(j{\omega}L+R\right)I(x)
+\end{equation}
+By KCL, 
+\begin{gather}
+V(s, x) = \frac{I(s, x - {\Delta}x)-I(s, x)}{(G + sC){\Delta}x}
+\end{gather}
+As $\Delta x -> 0$,
+\begin{equation}
+	\frac{\partial I(x)}{\partial x} = \left(j{\omega}C+G\right)V(x)
+\end{equation}
+From equation (3) and (5), we deduce that,
+\begin{gather}
+	\frac{\partial^2 V(x)}{\partial x^2} = \left(j{\omega}L+R\right)\left(j{\omega}C+G\right)V(x)\\
+\frac{\partial^2 I(x)}{\partial x^2} = \left(j{\omega}L+R\right)\left(j{\omega}C+G\right)I(x)	
+\end{gather}
+Comparing this with a travelling wave equation we get that,
+\begin{equation}
+	\gamma = \sqrt{\left(j{\omega}L+R\right)\left(j{\omega}C+G\right)}
+\end{equation}
+Solution are,
+\begin{gather}
+	V(x) = V^+e^{-{\gamma}x} + V^-e^{{\gamma}x}\\
+	I(x) = \frac{V^-e^{{\gamma}x} - V^+e^{-{\gamma}x}}{Z_0}
+\end{gather}
+Where $Z_0 = \frac{\left(j{\omega}L+R\right)}{\left(j{\omega}C+G\right)}$
+\section*{\hfil Problem 2}
+\begin{gather}
+	z(t) = x(t)cos({\omega}t) + y(t)sin({\omega}t)\\
+	z(t) = \sqrt{x^2(t) + y^2(t)}\left(\frac{x(t)}{\sqrt{x^2(t) + y^2(t)}}cos({\omega}t) + \frac{y(t)}{\sqrt{x^2(t) + y^2(t)}}sin({\omega}t)\right)\\
+	z(t) = \sqrt{x^2(t) + y^2(t)}cos({\omega}t - tan^{-1}\left(\frac{y(t)}{x(t)}\right))\\
+	\implies A(t) = \sqrt{x^2(t) + y^2(t)}\\
+	\implies \phi(t) = - tan^{-1}\left(\frac{y(t)}{x(t)}\right)
+\end{gather}
+\textbf{We cannot comment on the bandwidth of A(t) and} $\mathbf{\phi}$\textbf{(t) compared to x(t) and y(t).}\\
+Say x(t) is m(t)sin($\omega _0$t) and y(t) is  m(t)cos($\omega _0$t) then we can tell that A(t) = m(t) thus band-limited less than both x(t) and y(t) and $\phi$(t) is linear which means band-unlimited take the case where x(t) = y(t) here Phase is constant and thus band-limited.
+
+\end{document}
