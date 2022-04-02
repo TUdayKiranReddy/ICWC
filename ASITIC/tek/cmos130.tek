@@ -1,0 +1,70 @@
+
+<chip>
+
+	chipx = 512	; dimensions of the chip in x direction
+	chipy = 512	; dimensions of the chip in y direction
+	fftx = 1024	; x-fft size (must be a power of 2)
+	ffty = 1024   	; y-fft size
+	TechFile = cmos130.tek
+	TechPath = .
+
+<layer> 0 			; p(-) Layer
+	rho = 10		; ohm-cm
+	t   = 300		; microns
+        eps = 11.9
+
+<layer>	1   		; Oxide Layer
+	rho = 1e10
+	t = 10
+	eps = 4
+
+<metal>  0
+	layer = 1
+	rsh = 80
+	t = 0.22
+	d =  2.92
+	smin = .1
+	wmin = .1
+	name = m7
+	color = red
+
+<metal> 1 
+	layer = 1
+	rsh = 30
+	t = .9
+	d =  3.735
+	smin = .5
+	wmin = .5
+	name = m8
+	color = green
+
+<metal> 2 
+	layer = 1
+	rsh = 5
+	t = 3.5
+	d =  5.23
+	smin = 1
+	wmin = 1
+	name = m9
+	color = yellow
+
+<via> 0			; m9 to m8
+	top = 2
+	bottom = 1
+	r = 4
+	width = .2
+	space = .3
+	overplot1 = .2
+	overplot2 = .2
+	name = v78
+	color = gray
+<via> 0			; m8 to m7
+	top = 1
+	bottom = 0
+	r = 4
+	width = .2
+	space = .3
+	overplot1 = .2
+	overplot2 = .2
+	name = v89
+	color = purple

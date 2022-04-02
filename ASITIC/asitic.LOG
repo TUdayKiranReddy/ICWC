@@ -1,0 +1,1502 @@
+
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 14:53:30 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/CMOS.tek>...
+Reading .asitic init file...
+ASITIC>  SQ NAME=A:LEN=170:W=10:S=3:N=4.75:METAL=M3:EXIT=M2:XORG=200:YORG=200
+
+ASITIC>  pix
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (40x40).Could not open data file at frequency = 1.00.  Tried using . as path.
+Generating data at 1.00 GHz...Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            
+Writing data.....
+Generating inductance matrix (100x100).....
+Pi Model at f=1 GHz:  Q = 1.551 , 1.553 , 1.571 
+L = 3.054 nH R = 12.07 
+Cs1 = 140.9 fF Rs1 = 6.904 
+Cs2 = 135.3 fF Rs2 = -2.946      Est. Resonance = 7.655 GHz
+ASITIC>  help
+
+Type:  help <category> for a list of commands in one of the following categories
+Catagories:  Create, Graphics, Session, Export, Edit, Calc, Optim
+ASITIC>  help Graphics
+
+For more information, type 'help <command>'.  <command> is one of the following:  bb, grid, hpan, kill, metal, origin, origin3d, pan, panout, pop, refresh, rotate3d, ruler, scale, scale3d, showdir, snap, vpan, vpc
+ASITIC>  export
+
+Unknown or Mistyped Commnd
+ASITIC>  help Optim
+
+For more information, type 'help <command>'.  <command> is one of the following:  batchopt, optarea, optl, optlsympoly, optlsymsq, optpoly, randtaper, sweep, sweepmm, sweepsh, sweepsh2, sweeptaper
+ASITIC>  Q A 1
+
+Low Frequency Extrapolated Q of A = 1.585 .
+Use "pix" for high-frequency Q.
+ASITIC>  [AG
+
+Unknown or Mistyped Commnd
+ASITIC>  Q A 1G
+
+Low Frequency Extrapolated Q of A = 1.585 .
+Use "pix" for high-frequency Q.
+ASITIC>  clear
+
+ASITIC>  clc
+
+Unknown or Mistyped Commnd
+ASITIC>  help
+
+Type:  help <category> for a list of commands in one of the following categories
+Catagories:  Create, Graphics, Session, Export, Edit, Calc, Optim
+ASITIC>  help Edit
+
+For more information, type 'help <command>'.  <command> is one of the following:  befriend, copy, erase, findi, flip, fliph, flipphase, flipv, geom, hide, join, joinshunt, metalarea, move, moveport, moveto, movex, movey, rename, rotate, select, sptowire, stretch, unfriend, unjoin, unselect
+ASITIC>  erase
+Invalid Type or Number of Argument(s):  Erase <spiral> (<spiral> ..)
+ASITIC>  delete
+Invalid Type or Number of Argument(s):  Erase <spiral> (<spiral> ..)
+ASITIC>  delete A
+
+ASITIC>  SP NAME=X:RADIUS=100:SIDES=32:W=8:S=3:N=5:METAL=M3:XORG=150:YORG=150
+
+ASITIC>  pix
+Unable to find spiral name (A).
+ASITIC>  pix X
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (320x320)...
+Generating inductance matrix (640x640).....
+Pi Model at f=1 GHz:  Q = 435.8 m, 86.44 m, 324.7 m
+L = 74.27 pH R = -4.128 
+Cs1 = -1.028 nF Rs1 = 5.977 
+Cs2 = -17.35 nF Rs2 = 1.699      Est. Resonance = nan aHz
+ASITIC>  delete X
+
+ASITIC>  SYMSQ NAME=C:LEN=150:W=10:S=3:ILEN=13:N=5:METAL=M3:XORG=200:YORG
+Zero length right hand side ambiguous.
+ASITIC>  delete C
+
+ASITIC>  SYMSQ NAME=A:LEN=150:W=10:S=3:ILEN=13:N=5:METAL=M3:XORG=200:YORG=200
+
+ASITIC>  pix
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (200x200).....
+Pi Model at f=1 GHz:  Q = 1.269 , 1.269 , 1.279 
+L = 2.159 nH R = 10.53 
+Cs1 = 113.5 fF Rs1 = -1.779 
+Cs2 = 111.6 fF Rs2 = 5.155      Est. Resonance = 10.14 GHz
+ASITIC>  help pix
+
+PiX (<spiral> <freq> <spiral gnd>)
+Calculate the equivalent pi model of a spiral at <freq> in the presence of a grounding structure (a substrate tap).  Note:  This is the symmetric formulation.
+ASITIC>  pix !
+Could not Find Spiral <!>.
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (200x200).....
+Pi Model at f=1 GHz:  Q = 1.269 , 1.269 , 1.279 
+L = 2.159 nH R = 10.53 
+Cs1 = 113.5 fF Rs1 = -1.779 
+Cs2 = 111.6 fF Rs2 = 5.155      Est. Resonance = 10.14 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=150:W=15:S=2:ILEN=13:N=5:METAL=M3:XORG=200:YORG=200
+Spiral of given dimensions cannot support more than  4.00 turns.Unable to create structure.
+ASITIC>  SYMSQ NAME=A:LEN=150:W=15:S=2:ILEN=13:N=5:METAL=M3:XORG=200:YORG=200
+Spiral of given dimensions cannot support more than  4.00 turns.Unable to create structure.
+ASITIC>  SYMSQ NAME=A:LEN=150:W=15:S=2:ILEN=10:N=5:METAL=M3:XORG=200:YORG=200
+Spiral of given dimensions cannot support more than  4.00 turns.Unable to create structure.
+ASITIC>  SYMSQ NAME=A:LEN=150:W=15:S=2:ILEN=13:N=4:METAL=M3:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (96x96)...
+Generating inductance matrix (224x224).....
+Pi Model at f=1 GHz:  Q = 1.394 , 1.394 , 1.4 
+L = 1.208 nH R = 5.401 
+Cs1 = 116.9 fF Rs1 = -1.886 
+Cs2 = 116.1 fF Rs2 = 3.694      Est. Resonance = 13.37 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=150:W=5:S=2:ILEN=13:N=10:METAL=M3:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (160x160).....
+Pi Model at f=1 GHz:  Q = nan a, nan a, nan a
+C=nan aF R=nan a
+Cs1=0 aF Rs1=1000 T
+Cs2=0 aF Rs2=1000 T
+ASITIC>  pix
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (160x160).....
+Pi Model at f=1 GHz:  Q = nan a, nan a, nan a
+C=nan aF R=nan a
+Cs1=0 aF Rs1=1000 T
+Cs2=0 aF Rs2=1000 T
+ASITIC>  pix
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (160x160).....
+Pi Model at f=1 GHz:  Q = nan a, nan a, nan a
+C=nan aF R=nan a
+Cs1=0 aF Rs1=1000 T
+Cs2=0 aF Rs2=1000 T
+ASITIC>  help pix
+
+PiX (<spiral> <freq> <spiral gnd>)
+Calculate the equivalent pi model of a spiral at <freq> in the presence of a grounding structure (a substrate tap).  Note:  This is the symmetric formulation.
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=200:W=19:S=21:ILEN=41:N=4:METAL=M3:METAL2=M2:XORG=256:YORG=256
+
+ASITIC>  pix
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (284x284)...
+Generating inductance matrix (639x639).....
+Pi Model at f=1 GHz:  Q = 2.503 , 2.501 , 2.629 
+L = 4.522 nH R = 10.31 
+Cs1 = 448.8 fF Rs1 = 2.024 
+Cs2 = 453.5 fF Rs2 = 1.526      Est. Resonance = 3.515 GHz
+ASITIC>  pi A 1
+
+Pi Model at f=1 GHz:  Q = 2.802 , 2.802 , 2.805 
+L = 4.697 nH R = 10.51 
+Cs1 = 10.64 fF Rs1 = -2.97 
+Cs2 = 10.09 fF Rs2 = 7.689      Est. Resonance = 22.51 GHz
+ASITIC>  Pi2 A 1
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (284x284)...
+Generating inductance matrix (639x639).....
+Solving node equations...(71x71)
+Pi Model at f=1 GHz:  Q = 2.499 , 2.505 , 2.629 
+L = 4.522 nH R = 10.31 
+Cs1 = 455.8 fF Rs1 = 1.93 
+Cs2 = 446.4 fF Rs2 = 1.61      Est. Resonance = 3.487 GHz
+ASITIC>  Pi3 A 1
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (284x284)...
+Generating inductance matrix (639x639).....
+Solving node equations...(71x71)
+Pi Model at f=1 GHz:  Q = 2.499 , 2.505 , 2.629 
+L = 4.522 nH R = 10.31 
+Cs1 = 455.8 fF Rs1 = 1.93 
+Cs2 = 446.4 fF Rs2 = 1.61      Est. Resonance = 3.487 GHz
+ASITIC>  2Port A 1 S
+Could not Find Ground Spiral <1>.
+ASITIC>  pix
+
+maxL = 7500.00, maxT =  2.21, maxW =  2.21 (lambda = 150000.00, delta =  2.76)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (284x284)...
+Generating inductance matrix (639x639).....
+Pi Model at f=1 GHz:  Q = 2.503 , 2.501 , 2.629 
+L = 4.522 nH R = 10.31 
+Cs1 = 448.8 fF Rs1 = 2.024 
+Cs2 = 453.5 fF Rs2 = 1.526      Est. Resonance = 3.515 GHz
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 15:48:32 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  exit
+
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 15:53:03 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  SQ NAME=A LEN=300 W=10 S=0.8 N=7 XORG=200 YORG=200 METAL=2 EXIT=1
+
+ASITIC>  pix a 1
+Could not Find Spiral <a>.
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (174x174).Could not open data file at frequency = 1.00.  Tried using . as path.
+Generating data at 1.00 GHz...Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            
+Writing data.....
+Generating inductance matrix (348x348).....
+Pi Model at f=1 GHz:  Q = 9.188 , 9.641 , 15.39 
+L = 15.87 nH R = 2.842 
+Cs1 = 252 fF Rs1 = 352.1 
+Cs2 = 234.7 fF Rs2 = 392.1      Est. Resonance = 2.516 GHz
+ASITIC>  delete A
+
+ASITIC>  SQ NAME=A LEN=300 W=10 S=2 N=10 XORG=200 YORG=200 METAL=2 EXIT=1
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (246x246)...
+Generating inductance matrix (492x492).....
+Pi Model at f=1 GHz:  Q = 7.008 , 7.204 , 12.95 
+L = 18.1 nH R = 2.582 
+Cs1 = 300.9 fF Rs1 = 345.7 
+Cs2 = 287.8 fF Rs2 = 392.4      Est. Resonance = 2.157 GHz
+ASITIC>  SQ NAME=A LEN=400 W=10 S=2 N=10 XORG=200 YORG=200 METAL=2 EXIT=1
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SQ NAME=A LEN=400 W=10 S=2 N=10 XORG=200 YORG=200 METAL=2 EXIT=1
+
+ASITIC>  delete
+Invalid Type or Number of Argument(s):  Erase <spiral> (<spiral> ..)
+ASITIC>  delete A
+
+ASITIC>  SQ NAME=A LEN=400 W=10 S=2 N=10 XORG=0 YORG=0 METAL=2 EXIT=1
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (246x246)...
+Generating inductance matrix (492x492).....
+Pi Model at f=1 GHz:  Q = 2.879 , 2.961 , 13.56 
+L = 34.44 nH R = -19.91 
+Cs1 = 456.7 fF Rs1 = 266.2 
+Cs2 = 452.7 fF Rs2 = 287.4      Est. Resonance = 5.17 GHz
+ASITIC>  delete a
+Could not Find Spiral <a>.
+ASITIC>  delete A
+
+ASITIC>  help delete
+
+Erase <spiral> (<spiral> ..)
+Erase a spiral(s) from memory.
+Hit 'Enter' to return to prompt.
+ASITIC>  
+
+Exiting current command due to exception.
+ASITIC>  exit
+
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 17:42:46 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  SYMSQ NAME=A LEN=150 W=10 S=3 N=7 METAL=2 XORG=0 YORG=0
+Spiral of given dimensions cannot support more than  5.00 turns.Unable to create structure.
+ASITIC>  SYMSQ NAME=A LEN=150 W=10 S=3 N=5 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (240x240)...
+Generating inductance matrix (456x456).....
+Pi Model at f=1 GHz:  Q = 6.775 , 6.772 , 6.84 
+L = 1.964 nH R = 1.786 
+Cs1 = 75.14 fF Rs1 = 880 
+Cs2 = 74.48 fF Rs2 = 958.9      Est. Resonance = 13.1 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=3 N=5 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (120x120)...
+Generating inductance matrix (228x228).....
+Pi Model at f=1 GHz:  Q = 8.842 , 8.837 , 9.005 
+L = 4.016 nH R = 2.75 
+Cs1 = 62.34 fF Rs1 = 888.6 
+Cs2 = 61.13 fF Rs2 = 966.3      Est. Resonance = 10.06 GHz
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=3 N=5 METAL=2 XORG=0 YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=3 N=7 METAL=2 XORG=0 YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=3 N=7 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (168x168)...
+Generating inductance matrix (318x318).....
+Pi Model at f=1 GHz:  Q = 8.794 , 8.788 , 9.061 
+L = 5.207 nH R = 3.501 
+Cs1 = 72.16 fF Rs1 = 893.5 
+Cs2 = 71.03 fF Rs2 = 960.7      Est. Resonance = 8.211 GHz
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=1 N=7 METAL=2 XORG=0 YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=1 N=7 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (168x168)...
+Generating inductance matrix (318x318).....
+Pi Model at f=1 GHz:  Q = 10.34 , 10.34 , 10.8 
+L = 7.202 nH R = 4.007 
+Cs1 = 67.78 fF Rs1 = 895.2 
+Cs2 = 66.23 fF Rs2 = 969.5      Est. Resonance = 7.204 GHz
+ASITIC>  delete A\
+Could not Find Spiral <A\>.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=1 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (240x240)...
+Generating inductance matrix (453x453).....
+Pi Model at f=1 GHz:  Q = 9.617 , 9.61 , 10.25 
+L = 9.174 nH R = 5.255 
+Cs1 = 77.22 fF Rs1 = 901.7 
+Cs2 = 75.76 fF Rs2 = 967.8      Est. Resonance = 5.98 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=50 W=5 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+Spiral of given dimensions cannot support more than  4.00 turns.Unable to create structure.
+ASITIC>  SYMSQ NAME=A LEN=50 W=1 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (151x151).....
+Pi Model at f=1 GHz:  Q = 2.968 , 2.968 , 2.971 
+L = 3.411 nH R = 7.207 
+Cs1 = 9.951 fF Rs1 = 2.882 k
+Cs2 = 9.231 fF Rs2 = 3.293 k     Est. Resonance = 27.32 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (151x151).....
+Pi Model at f=1 GHz:  Q = 4.964 , 4.97 , 5.044 
+L = 14.29 nH R = 17.53 
+Cs1 = 25.87 fF Rs1 = 1.429 k
+Cs2 = 24.5 fF Rs2 = 1.566 k     Est. Resonance = 8.277 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=20 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (160x160)...
+Generating inductance matrix (301x301).....
+Pi Model at f=1 GHz:  Q = 5.734 , 5.75 , 6.071 
+L = 29.77 nH R = 29.11 
+Cs1 = 34.84 fF Rs1 = 1.456 k
+Cs2 = 33.5 fF Rs2 = 1.56 k     Est. Resonance = 4.941 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (151x151).....
+Pi Model at f=1 GHz:  Q = 4.964 , 4.97 , 5.044 
+L = 14.29 nH R = 17.53 
+Cs1 = 25.87 fF Rs1 = 1.429 k
+Cs2 = 24.5 fF Rs2 = 1.566 k     Est. Resonance = 8.277 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=2 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (151x151).....
+Pi Model at f=1 GHz:  Q = 7.54 , 7.547 , 7.684 
+L = 9.731 nH R = 7.81 
+Cs1 = 32.22 fF Rs1 = 1.426 k
+Cs2 = 30.67 fF Rs2 = 1.568 k     Est. Resonance = 8.988 GHz
+ASITIC>  SYMSQ NAME=A LEN=100 W=2 S=1.5 N=10 METAL=2 XORG=0 YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=2 S=1.5 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (151x151).....
+Pi Model at f=1 GHz:  Q = 6.351 , 6.354 , 6.443 
+L = 7.547 nH R = 7.256 
+Cs1 = 34.14 fF Rs1 = 1.432 k
+Cs2 = 32.84 fF Rs2 = 1.56 k     Est. Resonance = 9.915 GHz
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=10 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (80x80)...
+Generating inductance matrix (151x151).....
+Pi Model at f=1 GHz:  Q = 4.964 , 4.97 , 5.044 
+L = 14.29 nH R = 17.53 
+Cs1 = 25.87 fF Rs1 = 1.429 k
+Cs2 = 24.5 fF Rs2 = 1.566 k     Est. Resonance = 8.277 GHz
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=20 METAL=2 XORG=0 YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A 
+
+ASITIC>  SYMSQ NAME=A LEN=100 W=1 S=0.8 N=20 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (160x160)...
+Generating inductance matrix (301x301).....
+Pi Model at f=1 GHz:  Q = 5.734 , 5.75 , 6.071 
+L = 29.77 nH R = 29.11 
+Cs1 = 34.84 fF Rs1 = 1.456 k
+Cs2 = 33.5 fF Rs2 = 1.56 k     Est. Resonance = 4.941 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=150 W=1 S=0.8 N=20 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (160x160)...
+Generating inductance matrix (301x301).....
+Pi Model at f=1 GHz:  Q = 4.507 , 4.57 , 6.308 
+L = 88.62 nH R = 60.43 
+Cs1 = 62.17 fF Rs1 = 921.9 
+Cs2 = 60.21 fF Rs2 = 976.2      Est. Resonance = 3.37 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=0.8 N=20 METAL=2 XORG=0 YORG=0
+Spiral of given dimensions cannot support more than 12.00 turns.Unable to create structure.
+ASITIC>  delete A
+Could not Find Spiral <A>.
+ASITIC>  SYMSQ NAME=A LEN=150 W=5 S=0.8 N=5 METAL=2 XORG=0 YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (120x120)...
+Generating inductance matrix (228x228).....
+Pi Model at f=1 GHz:  Q = 9.995 , 9.993 , 10.21 
+L = 5.087 nH R = 3.061 
+Cs1 = 56.17 fF Rs1 = 894.9 
+Cs2 = 54.31 fF Rs2 = 987.4      Est. Resonance = 9.415 GHz
+ASITIC>  delete A
+
+ASITIC>  SQMM NAME=A:LEN=150:W=8:S=2:N=5:METAL=3:EXIT=1:XORG=0:YORG=0
+Illegal metal layer.Unable to create structure.
+ASITIC>  SQMM NAME=A:LEN=150:W=8:S=2:N=5:METAL=2:EXIT=1:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (200x200)...
+Generating inductance matrix (300x300).....
+Pi Model at f=1 GHz:  Q = 5.593 , 5.167 , 5.784 
+L = 11.36 nH R = 11.56 
+Cs1 = 62.53 fF Rs1 = 1.668 k
+Cs2 = 123.5 fF Rs2 = 645.4      Est. Resonance = 5.972 GHz
+ASITIC>  delete A
+
+ASITIC>  SQMM NAME=A:LEN=400:W=8:S=2:N=5:METAL=2:EXIT=1:XORG=0:YORG=0
+
+ASITIC>  pix A
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (200x200)...
+Generating inductance matrix (300x300).....
+Pi Model at f=1 GHz:  Q = 1.891 , 1.717 , 2.112 
+C=336.8 fF R=-9.718 k
+Cs1=197.7 fF Rs1=522.5 
+Cs2=460.1 fF Rs2=219.2 
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (200x200)...
+Generating inductance matrix (300x300).....
+Pi Model at f=1 GHz:  Q = 1.891 , 1.717 , 2.112 
+C=336.8 fF R=-9.718 k
+Cs1=197.7 fF Rs1=522.5 
+Cs2=460.1 fF Rs2=219.2 
+ASITIC>  delete A
+
+ASITIC>  SQMM NAME=A:LEN=400:W=8:S=2:N=5:METAL=2:EXIT=1:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (200x200)...
+Generating inductance matrix (300x300).....
+Pi Model at f=1 GHz:  Q = 1.891 , 1.717 , 2.112 
+C=336.8 fF R=-9.718 k
+Cs1=197.7 fF Rs1=522.5 
+Cs2=460.1 fF Rs2=219.2 
+ASITIC>  delete A
+
+ASITIC>  SQMM NAME=A:LEN=200:W=8:S=2:N=5:METAL=2:EXIT=1:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (200x200)...
+Generating inductance matrix (300x300).....
+Pi Model at f=1 GHz:  Q = 6.014 , 4.555 , 6.701 
+L = 23.03 nH R = 17.03 
+Cs1 = 91.42 fF Rs1 = 1.163 k
+Cs2 = 187.7 fF Rs2 = 460.1      Est. Resonance = 3.469 GHz
+ASITIC>  delete A
+
+ASITIC>  SQMM NAME=A:LEN=200:W=1:S=0.8:N=5:METAL=2:EXIT=1:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (40x40)...
+Generating inductance matrix (60x60).....
+Pi Model at f=1 GHz:  Q = 1.944 , 1.922 , 2.106 
+L = 51.72 nH R = 141 
+Cs1 = 42.14 fF Rs1 = 1.474 k
+Cs2 = 56.83 fF Rs2 = 318.6      Est. Resonance = 3.409 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=10:S=4:ILEN=14:N=5:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (534x534)...
+Generating inductance matrix (1044x1044).....
+Pi Model at f=1 GHz:  Q = 10.53 , 10.53 , 10.84 
+L = 3.403 nH R = 1.917 
+Cs1 = 103.3 fF Rs1 = 496 
+Cs2 = 103.8 fF Rs2 = 495.1      Est. Resonance = 8.49 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=10:S=0.8:ILEN=14:N=5:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (534x534)...
+Generating inductance matrix (1044x1044).....
+Pi Model at f=1 GHz:  Q = 10.93 , 10.92 , 11.3 
+L = 4.361 nH R = 2.344 
+Cs1 = 96.08 fF Rs1 = 494.5 
+Cs2 = 96.83 fF Rs2 = 493.5      Est. Resonance = 7.775 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=5:S=0.8:ILEN=14:N=5:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (267x267)...
+Generating inductance matrix (522x522).....
+Pi Model at f=1 GHz:  Q = 11.81 , 11.81 , 12.21 
+L = 7.211 nH R = 3.585 
+Cs1 = 68.06 fF Rs1 = 495.6 
+Cs2 = 68.41 fF Rs2 = 495.2      Est. Resonance = 7.184 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=5:S=0.8:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (537x537)...
+Generating inductance matrix (1047x1047).....
+Pi Model at f=1 GHz:  Q = 12.49 , 12.47 , 14.57 
+L = 16.31 nH R = 5.923 
+Cs1 = 97.31 fF Rs1 = 504.6 
+Cs2 = 97.5 fF Rs2 = 506      Est. Resonance = 3.995 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=1:S=0.8:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 6.192 , 6.19 , 6.681 
+L = 36.75 nH R = 32.02 
+Cs1 = 49.3 fF Rs1 = 515.4 
+Cs2 = 49.32 fF Rs2 = 517.1      Est. Resonance = 4.657 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=1:S=1:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 6.056 , 6.054 , 6.537 
+L = 34.84 nH R = 31.02 
+Cs1 = 51.68 fF Rs1 = 514.7 
+Cs2 = 51.7 fF Rs2 = 516.1      Est. Resonance = 4.81 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=1:S=3:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 4.774 , 4.774 , 5.122 
+L = 23.23 nH R = 26.56 
+Cs1 = 70.28 fF Rs1 = 507.7 
+Cs2 = 70.31 fF Rs2 = 507.7      Est. Resonance = 8.381 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=2:S=3:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 8.052 , 8.048 , 8.902 
+L = 19.33 nH R = 12.28 
+Cs1 = 82.69 fF Rs1 = 504.4 
+Cs2 = 82.78 fF Rs2 = 505.1      Est. Resonance = 3.981 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=4:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 3.527 , 3.528 , 3.738 
+L = 20.31 nH R = 32.23 
+Cs1 = 73.8 fF Rs1 = 506.8 
+Cs2 = 73.78 fF Rs2 = 506.1      Est. Resonance = 15.9 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=200:W=0.8:S=4:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHzCoordinate out of range.Errors while attempting to generate subcontacts.Could not generate capacitance matrix.
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=200:W=0.8:S=4:N=10:METAL=2:XORG=250:YORG=250
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 2.482 , 2.482 , 4.372 
+L = 65.59 nH R = 50.68 
+Cs1 = 163.6 fF Rs1 = 301.9 
+Cs2 = 163.6 fF Rs2 = 301.9      Est. Resonance = 1.742 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=3:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (179x179)...
+Generating inductance matrix (349x349).....
+Pi Model at f=1 GHz:  Q = 3.959 , 3.959 , 4.22 
+L = 24.1 nH R = 33.67 
+Cs1 = 67.54 fF Rs1 = 508.8 
+Cs2 = 67.55 fF Rs2 = 509.1      Est. Resonance = 7.515 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=3:N=5:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (89x89)...
+Generating inductance matrix (174x174).....
+Pi Model at f=1 GHz:  Q = 2.883 , 2.883 , 2.917 
+L = 8.843 nH R = 18.82 
+Cs1 = 43.59 fF Rs1 = 512.1 
+Cs2 = 43.58 fF Rs2 = 509.8      Est. Resonance = 8.107 GHz
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=3:N=5:METAL=1:XORG=200:YORG=200
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=3:N=5:METAL=1:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (89x89)...
+Generating inductance matrix (89x89).....
+Pi Model at f=1 GHz:  Q = 168 m, 168 m, 172.2 m
+L = 672.5 pH R = 23.96 
+Cs1 = 54.15 fF Rs1 = 528.1 
+Cs2 = 54.15 fF Rs2 = 530.8      Est. Resonance = 26.37 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=0.8:N=5:METAL=1:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (89x89)...
+Generating inductance matrix (89x89).....
+Pi Model at f=1 GHz:  Q = 156.1 m, 156.1 m, 159.3 m
+L = 628.5 pH R = 24.29 
+Cs1 = 43.56 fF Rs1 = 1.138 k
+Cs2 = 43.57 fF Rs2 = 1.14 k     Est. Resonance = 30.42 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=0.8:N=100:METAL=1:XORG=200:YORG=200
+Spiral of given dimensions cannot support more than 61.00 turns.Unable to create structure.
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=0.8:N=61:METAL=1:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (1097x1097)...
+Generating inductance matrix (1097x1097).....
+Pi Model at f=1 GHz:  Q = 87.88 m, 89.68 m, 131.1 m
+L = 688.2 pH R = 25.75 
+Cs1 = 1.77 pF Rs1 = 162.5 
+Cs2 = 1.778 pF Rs2 = 165.3      Est. Resonance = 468.4 MHz
+ASITIC>  delete A
+
+ASITIC>  
+
+ASITIC>  SYMPOLY NAME=A:RAD=100:W=0.8:S=0.8:N=61:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (1097x1097)...
+Generating inductance matrix (2134x2134).....
+Pi Model at f=1 GHz:  Q = 5.813 , 5.8 , 7.959 
+C=149.6 fF R=52.47 
+Cs1=107.9 fF Rs1=537 
+Cs2=108 fF Rs2=538.3 
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.79 , 11.82 , 14.25 
+L = 20.84 nH R = 7.431 
+Cs1 = 101.6 fF Rs1 = 430.7 
+Cs2 = 101.5 fF Rs2 = 428.2      Est. Resonance = 11.18 GHz
+ASITIC>  delete A
+
+ASITIC>  
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.5:N=7:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (112x112)...
+Generating inductance matrix (212x212).....
+Pi Model at f=1 GHz:  Q = 11.95 , 11.97 , 13.66 
+L = 17.18 nH R = 6.845 
+Cs1 = 93.66 fF Rs1 = 432 
+Cs2 = 93.54 fF Rs2 = 429.1      Est. Resonance = 3.967 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=3.5:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.36 , 11.38 , 13.57 
+L = 22.64 nH R = 8.612 
+Cs1 = 94.74 fF Rs1 = 431.8 
+Cs2 = 94.64 fF Rs2 = 429.2      Est. Resonance = 7.329 GHz
+ASITIC>  SYMSQ NAME=A:LEN=210:W=5:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=5:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (192x192)...
+Generating inductance matrix (363x363).....
+Pi Model at f=1 GHz:  Q = 11.77 , 11.8 , 14.33 
+L = 17.83 nH R = 6.26 
+Cs1 = 114.6 fF Rs1 = 429.3 
+Cs2 = 114.4 fF Rs2 = 426.9      Est. Resonance = 3.521 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=5.5:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (192x192)...
+Generating inductance matrix (363x363).....
+Pi Model at f=1 GHz:  Q = 11.76 , 11.8 , 14.29 
+L = 16.44 nH R = 5.801 
+Cs1 = 120 fF Rs1 = 428.5 
+Cs2 = 119.4 fF Rs2 = 427.5      Est. Resonance = 3.583 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=6:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (256x256)...
+Generating inductance matrix (484x484).....
+Pi Model at f=1 GHz:  Q = 11.43 , 11.45 , 13.8 
+L = 15.23 nH R = 5.605 
+Cs1 = 125.6 fF Rs1 = 429.1 
+Cs2 = 125.3 fF Rs2 = 426.8      Est. Resonance = 3.639 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=6:S=0.5:N=9:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (288x288)...
+Generating inductance matrix (544x544).....
+Pi Model at f=1 GHz:  Q = 10.84 , 10.88 , 13.67 
+L = 17.24 nH R = 6.045 
+Cs1 = 133.3 fF Rs1 = 429.7 
+Cs2 = 133 fF Rs2 = 427.3      Est. Resonance = 3.32 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=6:S=0.5:N=10:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (320x320)...
+Generating inductance matrix (604x604).....
+Pi Model at f=1 GHz:  Q = 10.22 , 10.25 , 13.37 
+L = 19.02 nH R = 6.454 
+Cs1 = 139.9 fF Rs1 = 430.6 
+Cs2 = 139.6 fF Rs2 = 428.4      Est. Resonance = 3.086 GHz
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.79 , 11.82 , 14.25 
+L = 20.84 nH R = 7.431 
+Cs1 = 101.6 fF Rs1 = 430.7 
+Cs2 = 101.5 fF Rs2 = 428.2      Est. Resonance = 11.18 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.67 , 11.69 , 14.08 
+L = 19.84 nH R = 7.171 
+Cs1 = 105 fF Rs1 = 430 
+Cs2 = 104.8 fF Rs2 = 427.7      Est. Resonance = 23.67 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=5:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (192x192)...
+Generating inductance matrix (363x363).....
+Pi Model at f=1 GHz:  Q = 11.73 , 11.77 , 14.25 
+L = 17 nH R = 6.019 
+Cs1 = 117.5 fF Rs1 = 428.7 
+Cs2 = 117.1 fF Rs2 = 427.1      Est. Resonance = 3.561 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=300:W=4:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 7.807 , 7.985 , 14.83 
+L = 38.05 nH R = 4.869 
+Cs1 = 158 fF Rs1 = 399.9 
+Cs2 = 157.9 fF Rs2 = 383.9      Est. Resonance = 3.54 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.67 , 11.69 , 14.08 
+L = 19.84 nH R = 7.171 
+Cs1 = 105 fF Rs1 = 430 
+Cs2 = 104.8 fF Rs2 = 427.7      Est. Resonance = 23.67 GHz
+ASITIC>  delete 
+Invalid Type or Number of Argument(s):  Erase <spiral> (<spiral> ..)
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4.5:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (192x192)...
+Generating inductance matrix (363x363).....
+Pi Model at f=1 GHz:  Q = 11.64 , 11.66 , 14.1 
+L = 18.4 nH R = 6.604 
+Cs1 = 111.5 fF Rs1 = 429.3 
+Cs2 = 111.3 fF Rs2 = 427.1      Est. Resonance = 3.514 GHz
+ASITIC>  delete A 
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4.1:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 12
+
+maxL = 625.00, maxT =  0.49, maxW =  0.49 (lambda = 12500.00, delta =  0.61)
+Performing Analysis at 12 GHz
+Generating capacitance matrix (512x512).Could not open data file at frequency = 12.00.  Tried using . as path.
+Generating data at 12.00 GHz...Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...
+Hit 'Enter' to return to prompt.Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            
+Writing data....
+Hit 'Enter' to return to prompt..
+Generating inductance matrix (3304x3304)..
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+Hit 'Enter' to return to prompt.
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 18:43:13 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4.1:S=0.8:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.75 , 11.74 , 14.17 
+L = 19.55 nH R = 7.015 
+Cs1 = 105.3 fF Rs1 = 432.2 
+Cs2 = 106.2 fF Rs2 = 425.4      Est. Resonance = 3.507 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.79 , 11.82 , 14.25 
+L = 20.84 nH R = 7.431 
+Cs1 = 101.6 fF Rs1 = 430.7 
+Cs2 = 101.5 fF Rs2 = 428.2      Est. Resonance = 11.18 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=210:W=4:S=0.1:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.85 , 11.88 , 14.35 
+L = 22.42 nH R = 7.934 
+Cs1 = 97.17 fF Rs1 = 431.4 
+Cs2 = 96.95 fF Rs2 = 429.2      Est. Resonance = 7.753 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.93 , 11.95 , 13.99 
+L = 19.06 nH R = 7.19 
+Cs1 = 95.8 fF Rs1 = 445.4 
+Cs2 = 95.67 fF Rs2 = 443.5      Est. Resonance = 69.22 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=190:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.99 , 12 , 13.68 
+L = 17.33 nH R = 6.907 
+Cs1 = 89.98 fF Rs1 = 462.6 
+Cs2 = 89.86 fF Rs2 = 461.3      Est. Resonance = 4.03 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=190:W=4:S=0.5:N=7:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (112x112)...
+Generating inductance matrix (212x212).....
+Pi Model at f=1 GHz:  Q = 11.93 , 11.94 , 13.1 
+L = 14.44 nH R = 6.275 
+Cs1 = 83.2 fF Rs1 = 463.2 
+Cs2 = 83.09 fF Rs2 = 461.8      Est. Resonance = 4.592 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=4:S=0.5:N=7:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (112x112)...
+Generating inductance matrix (212x212).....
+Pi Model at f=1 GHz:  Q = 11.97 , 11.99 , 13.4 
+L = 15.79 nH R = 6.571 
+Cs1 = 88.43 fF Rs1 = 446.4 
+Cs2 = 88.32 fF Rs2 = 444.2      Est. Resonance = 4.259 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=4.1:S=0.5:N=7:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (112x112)...
+Generating inductance matrix (212x212).....
+Pi Model at f=1 GHz:  Q = 12.06 , 12.06 , 13.51 
+L = 15.56 nH R = 6.417 
+Cs1 = 89.18 fF Rs1 = 447.7 
+Cs2 = 89.65 fF Rs2 = 442.8      Est. Resonance = 4.272 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=3.9:S=0.5:N=7:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (112x112)...
+Generating inductance matrix (212x212).....
+Pi Model at f=1 GHz:  Q = 11.87 , 11.9 , 13.28 
+L = 16.03 nH R = 6.738 
+Cs1 = 87.8 fF Rs1 = 445 
+Cs2 = 87.05 fF Rs2 = 445.9      Est. Resonance = 4.242 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=3.9:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.84 , 11.88 , 13.88 
+L = 19.39 nH R = 7.382 
+Cs1 = 95.06 fF Rs1 = 444.1 
+Cs2 = 94.27 fF Rs2 = 445.1      Est. Resonance = 20.35 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=3.5:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.5 , 11.52 , 13.37 
+L = 20.75 nH R = 8.289 
+Cs1 = 89.44 fF Rs1 = 446.2 
+Cs2 = 89.34 fF Rs2 = 444.3      Est. Resonance = 9.806 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=3:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 10.86 , 10.87 , 12.47 
+L = 22.64 nH R = 9.848 
+Cs1 = 82.69 fF Rs1 = 447.2 
+Cs2 = 82.59 fF Rs2 = 445.4      Est. Resonance = 7.083 GHz
+ASITIC>  delete A 
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=5:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (192x192)...
+Generating inductance matrix (363x363).....
+Pi Model at f=1 GHz:  Q = 11.86 , 11.88 , 13.96 
+L = 16.2 nH R = 6.095 
+Cs1 = 107.7 fF Rs1 = 444.5 
+Cs2 = 107.5 fF Rs2 = 442.8      Est. Resonance = 3.81 GHz
+ASITIC>  delete A 1
+Could not Find Spiral <1>.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=5:S=1:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (192x192)...
+Generating inductance matrix (363x363).....
+Pi Model at f=1 GHz:  Q = 11.75 , 11.77 , 13.75 
+L = 14.95 nH R = 5.748 
+Cs1 = 111.7 fF Rs1 = 444.4 
+Cs2 = 111.4 fF Rs2 = 443      Est. Resonance = 3.895 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=200:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.93 , 11.95 , 13.99 
+L = 19.06 nH R = 7.19 
+Cs1 = 95.8 fF Rs1 = 445.4 
+Cs2 = 95.67 fF Rs2 = 443.5      Est. Resonance = 69.22 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=199:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.94 , 11.96 , 13.96 
+L = 18.88 nH R = 7.163 
+Cs1 = 95.21 fF Rs1 = 447 
+Cs2 = 95.09 fF Rs2 = 445.2      Est. Resonance = 3.754 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=198:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.95 , 11.97 , 13.93 
+L = 18.71 nH R = 7.137 
+Cs1 = 94.63 fF Rs1 = 448.6 
+Cs2 = 94.51 fF Rs2 = 446.9      Est. Resonance = 3.783 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=195:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.97 , 11.99 , 13.84 
+L = 18.19 nH R = 7.053 
+Cs1 = 92.89 fF Rs1 = 453.6 
+Cs2 = 92.77 fF Rs2 = 452.1      Est. Resonance = 3.872 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=185:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.99 , 12 , 13.51 
+L = 16.49 nH R = 6.753 
+Cs1 = 87.07 fF Rs1 = 472.2 
+Cs2 = 86.96 fF Rs2 = 471.3      Est. Resonance = 4.2 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=180:W=4:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.96 , 11.97 , 13.32 
+L = 15.66 nH R = 6.591 
+Cs1 = 84.16 fF Rs1 = 482.6 
+Cs2 = 84.05 fF Rs2 = 482      Est. Resonance = 4.384 GHz
+ASITIC>  delete 
+Invalid Type or Number of Argument(s):  Erase <spiral> (<spiral> ..)
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=8:METAL=2:XORG=200:YORG=200
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.88 , 11.91 , 13.24 
+L = 15.95 nH R = 6.757 
+Cs1 = 83.58 fF Rs1 = 481 
+Cs2 = 82.87 fF Rs2 = 483.5      Est. Resonance = 4.359 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=8:METAL=2:XORG=0:YORG=0
+
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=10:METAL=2:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (160x160)...
+Generating inductance matrix (302x302).....
+Pi Model at f=1 GHz:  Q = 11.28 , 11.31 , 13.88 
+L = 21.08 nH R = 7.492 
+Cs1 = 90.06 fF Rs1 = 724.7 
+Cs2 = 87.35 fF Rs2 = 781.2      Est. Resonance = 3.653 GHz
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=20:METAL=2:XORG=0:YORG=0
+The supplied spiral name is already in use.Unable to create structure.
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=20:METAL=2:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (320x320)...
+Generating inductance matrix (602x602).....
+Pi Model at f=1 GHz:  Q = 8.116 , 8.155 , 12.06 
+L = 33.6 nH R = 10.04 
+Cs1 = 112.6 fF Rs1 = 731.2 
+Cs2 = 110.2 fF Rs2 = 777.3      Est. Resonance = 2.587 GHz
+ASITIC>  delete A
+
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=15:METAL=2:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (240x240)...
+Generating inductance matrix (452x452).....
+Pi Model at f=1 GHz:  Q = 9.29 , 9.329 , 13.45 
+L = 30.76 nH R = 8.643 
+Cs1 = 107.3 fF Rs1 = 726.9 
+Cs2 = 104.8 fF Rs2 = 774.9      Est. Resonance = 2.77 GHz
+ASITIC>  exit
+
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 18:54:04 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=8:METAL=2:XORG=0:YORG=0
+
+ASITIC>  
+
+ASITIC>  exit
+
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 18:54:14 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=8:METAL=2:XORG=0:YORG=0
+
+ASITIC>  pix A 1
+
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+Performing Analysis at 1 GHz
+Generating capacitance matrix (128x128)...
+Generating inductance matrix (242x242).....
+Pi Model at f=1 GHz:  Q = 11.67 , 11.69 , 13.25 
+L = 15.99 nH R = 6.602 
+Cs1 = 79.55 fF Rs1 = 726.2 
+Cs2 = 76.75 fF Rs2 = 789.9      Est. Resonance = 4.462 GHz
+ASITIC>  pix A 1
+maxL = 7500.00, maxT =  1.68, maxW =  1.68 (lambda = 150000.00, delta =  2.11)
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Sat Apr  2 18:55:00 2022
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file <tek/cmos130.tek>...
+Reading .asitic init file...
+ASITIC>  SYMSQ NAME=A:LEN=180:W=3.9:S=0.5:N=8:METAL=2:XORG=0:YORG=0
