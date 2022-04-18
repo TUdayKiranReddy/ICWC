@@ -36,12 +36,19 @@ urlcolor=blue
 
 \section*{\hfil Problem 1}
 \subsection*{(a)}
-% FIG
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{./figs/1a.png}
+\end{figure}
 \begin{gather*}
 	I_D = 1A\\
 	V_o = 1.3 + V_s
 \end{gather*}
 \subsection*{(b)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{./figs/1b.png}
+\end{figure}
 \begin{gather*}
 NoisePSD = 1.69*2*1.6*10^{-19}*1\\
 \implies \tcbhighmath[drop fuzzy shadow]{NoisePSD = 5.41e-19 W/Hz}
@@ -54,6 +61,10 @@ For the total chain,
 	F_{eff} = 1 + \frac{V_{n, in_{3}}^2}{(A_{p1}A_{p2}A_{p3})^2V_{n, s}^2} + \frac{V_{n, in_{2}}^2}{(A_{p1}A_{p2})^2V_{n, s}^2} + \frac{V_{n, in_{1}}^2}{(A_{p1})^2V_{n, s}^2}
 \end{gather*}
 Take intermediate stage say ith stage,
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./figs/2.png}
+\end{figure}
 \begin{gather*}
 	F_i = \frac{A_{pi}^2V_{n, in_i}^2 + V_{n, in_{i+1}}^2}{A_{pi}^2V_{n, in_i}^2} = 1 + \frac{V_{n, in_{i+1}}^2}{A_{pi}^2V_{n, in_i}^2}
 \end{gather*}
@@ -82,7 +93,48 @@ We find gain from input to output and just multiply the input noise PSD with squ
 	\implies \tcbhighmath[drop fuzzy shadow]{NoisePSD_2 = V_n^2\frac{1}{(1 - {\omega}^2LC_2)^2 + ({\omega}^3RLC_1C_2 - {\omega}R(C_1 + C_2))^2}}\\
 \end{gather*}
 \section*{\hfil Problem 4}
-
+\subsection*{(a)}
+Small signal model\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{./figs/3e.jpeg}
+\end{figure}
+Effective gain here is $Av = \frac{V_{out}}{V_s} = -\frac{(g_m - 1/R_F)R_L}{1 + \frac{1}{R_F}(R_L + R_s + g_mR_sR_L)}$.\\
+\textbf{Miller approximation}\\
+The following circuits are equivalent.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./figs/3a.png}
+\end{figure}
+Applying miller approximation on our small signal circuit we get, here \textit{A} is open loop gain which is $-g_mR_L$
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./figs/3b.png}
+\end{figure}
+\begin{gather*}
+	I/PNoise = 4KT\left(R_s + \frac{R_F}{1 + g_mR_L}\right)\left(g_m\left(R_L||\frac{g_mR_L}{1+g_mR_L}R_F\right)\right)^2\\
+	O/PNoise = I/PNoise + 4KTrg_m\left(R_L||\frac{g_mR_L}{1+g_mR_L}R_F\right)^2 + 4KT\left(\frac{g_mR_L}{1+g_mR_L}R_F\right)\\
+	NF = \frac{O/PNoise}{I/PNoise}\\
+	\implies NF = 1 + \frac{r}{g_m\left(R_s + \frac{R_F}{1 + g_mR_L}\right)} + \frac{\left(\frac{g_mR_L}{1+g_mR_L}R_F\right)}{g_m^2\left(R_s + \frac{R_F}{1 + g_mR_L}\right)\left(R_L||\frac{g_mR_L}{1+g_mR_L}R_F\right)^2}\\
+	R_F >> g_mR_LR_s\\
+	\implies \tcbhighmath[drop fuzzy shadow]{NF = 1 + \frac{rR_L}{R_F}  + \frac{R_L}{g_mR_F}}
+\end{gather*}
+\subsection*{(b)}
+Small signal model
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./figs/3c.png}
+\end{figure}
+The gain here is zero. Thus using miller approximation. At output only noise would apprear.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./figs/3d.png}
+\end{figure}
+\begin{gather*}
+	I/PNoise = 4KT(R_s + R_F)\\
+	O/PNoise = 4KT(R_s + R_F) + 4KTrg_mR_L^2\\
+	\implies \tcbhighmath[drop fuzzy shadow]{F = 1 + \frac{rg_mR_L^2}{R_s + R_F}} 
+\end{gather*}
 \section*{\hfil Problem 5}
 We can find Z-parameters for both the models and just equate corresponding parameters.
 \subsection*{Model 1}
@@ -98,7 +150,7 @@ M = K\sqrt{L_1L_2}
 \subsection*{Model 2}
 \begin{figure}[H]
 	\centering
-%	\includegraphics[scale=0.4hot]{./figs/5m2.png}
+	\includegraphics[scale=0.3]{./figs/5m2.png}
 \end{figure}
 \begin{gather*}
 V_1 = s(L_s + L_p)I_1 + sNL_pI_2\\
