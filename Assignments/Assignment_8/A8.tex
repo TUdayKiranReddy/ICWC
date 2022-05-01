@@ -91,6 +91,16 @@ Since $(I_{-} + I_{+})|_{V_{in} = 0} = I_B \implies (V_{cm} - V_T) = \frac{I_B}{
 \end{gather*}
 Clearly there is no 3rd order component thus $P_{1dB} = \infty dB$ and $IIP3 = \infty dBm$.
 \section*{\hfil Problem 5}
+\begin{gather*}
+	V_x = V_s + R_sI_x = V_s - g_{m1}V_xR_s1\\
+	\implies V_x = \frac{V_s}{1+g_{m1}R_s}\\
+	I_x = -g_{m1}V_x
+\end{gather*}
+Input impedance here is $-V_x/I_x = 1/g_{m1}$. So if $R_s = 1/g_{m1}$ then the input is matched.
+\begin{gather*}
+	V_o = (g_{m1}R_1 + g_{m2}R_2)V_x\\
+	\implies V_o = \frac{g_{m1}R_1 + g_{m2}R_2}{1+g_{m1}R_s}V_s
+\end{gather*}
 \section*{\hfil Problem 6}
 
 
