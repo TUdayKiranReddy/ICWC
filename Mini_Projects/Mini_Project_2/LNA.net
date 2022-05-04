@@ -1,0 +1,25 @@
+* Z:\home\solomon\ICWC\Mini_Projects\Mini_Project_2\LNA.asc
+XX1 N005 N002 0 0 nmos65 params: L=65nm, W=6500nm
+R1 N006 N004 50
+V1 N006 0 SINE(0 10u 2.5Giga) AC 1
+R2 N002 N001 10k
+C1 N003 N002 100f
+R3 N003 0 100k
+Vdd N001 0 100m
+R4 N001 N005 0.8Mega
+R5 N005 0 1Mega
+C2 N005 N004 100µ
+
+* block symbol definitions
+.subckt nmos65 G D S B
+M1 D G S B NMOS l={L} w={W} ad='2*65n*{W}' as='2*65n*{W}' pd='2*(2*65n+{W})' ps='2*(2*65n+{W})' m={M}
+.PARAM L=65n W=1u M=1
+.ends nmos65
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\solomon\My Documents\LTspiceXVII\lib\cmp\standard.mos
+;ac dec 100 2G 3G
+.tran 0 0.01u 0
+.backanno
+.end
