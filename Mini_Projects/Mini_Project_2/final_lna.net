@@ -1,0 +1,30 @@
+* Z:\home\solomon\ICWC\Mini_Projects\Mini_Project_2\final_lna.asc
+XX1 N004 N002 0 0 nmos65 params: L=65nm, W=100um, M=10
+V1 N001 0 1.2
+C3 Vout1 N002 200p
+Rl1 N003 Vout1 100k
+C4 N004 N005 200f
+Rf1 N002 N004 1Mega
+L1 N002 N001 10n Rser=1.57k
+CL1 N002 0 10f
+C5 N003 0 100f
+V2 N005 N006 SINE(0 1u 2.47G) AC 1 Rser=50
+R3 N001 N002 20k
+V3 N006 0 SINE(0 1u 2.53G)
+
+* block symbol definitions
+.subckt nmos65 G D S B
+M1 D G S B NMOS l={L} w={W} ad='2*65n*{W}' as='2*65n*{W}' pd='2*(2*65n+{W})' ps='2*(2*65n+{W})' m={M}
+.PARAM L=65n W=1u M=1
+.ends nmos65
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\solomon\My Documents\LTspiceXVII\lib\cmp\standard.mos
+;ac dec 100 2G 3G
+.tran 0.1u
+;noise V(Vout1) V2 dec 100 2G 3G
+.net I(Rl1)  V2
+* Drain-feedback CG Low Noise Amplifier
+.backanno
+.end

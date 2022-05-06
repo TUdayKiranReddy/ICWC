@@ -1,0 +1,24 @@
+Circuit: * Z:\home\solomon\ICWC\Mini_Projects\Mini_Project_2\final_lna.asc
+
+WARNING: Node N003 is floating.
+
+Instance "m:x1:1": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri May 06 19:32:28 2022
+Total elapsed time: 0.244 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 25069
+traniter = 25060
+tranpoints = 12531
+accept = 7823
+rejected = 4708
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 296 bytes object code size  0.4/0.2/[0.2]
+Matrix Compiler2: 599 bytes object code size  0.2/0.2/[0.2]
+
