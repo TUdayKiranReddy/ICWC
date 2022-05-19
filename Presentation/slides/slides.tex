@@ -1,0 +1,230 @@
+\documentclass{beamer}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{xmpmulti}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{bigdelim}
+\usepackage{hhline}
+\usepackage{diagbox}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+%\usepackage{movie15}
+\usepackage{tkz-graph}
+\usepackage{graphicx}
+\usepackage{media9}
+\usepackage{multimedia}
+\usepackage{booktabs}
+\usepackage{tkz-graph}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{bigstrut}
+\usepackage{bigdelim}
+\usepackage{hhline}
+\usepackage{diagbox}
+
+\usepackage{xcolor,colortbl} % <---
+\usepackage{lipsum}
+
+\usepackage{tabularx}
+\usepackage{wrapfig,lipsum,booktabs}
+
+\usepackage{xcolor,colortbl}
+\definecolor{gray}{rgb}{0.1,0.1,0.1}
+\definecolor{light-gray1}{gray}{0.1}
+%\definecolor{light-gray2}{cyan}{0.6}
+
+\definecolor{light-gray2}{rgb}{0.9,0.9,0.9}
+
+
+
+%\newcommand{\done}{\cellcolor{gray}}  %{0.9}
+%\newcommand{\done}{\cellcolor{light-gray}}
+%\newcommand{\done}{\cellcolor{gray}}
+%\newcommand{\hcyan}[1]{{\color{teal} #1}}
+
+
+
+%\newcommand{\done}{\cellcolor{light-gray1}}
+\newcommand{\done}{\cellcolor{light-gray2}}
+
+
+
+
+\usepackage{subfig}
+%\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and
+%\bottomrule in tables
+\usepackage{multimedia}
+
+
+%\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+
+
+                         
+                         
+\usepackage{comment}
+\usepackage{amsmath,amssymb}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{nth}
+\usepackage{setspace}
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{mwe}
+\setstretch{1.3}
+\usepackage{mwe}
+\setstretch{1.3}
+
+%\usepackage[table]{xcolor}
+%\usepackage{boldline} 
+
+%\usepackage{tabularray}\%usepackage{xcolor}
+
+
+\setlength{\arrayrulewidth}{0.01pt}
+
+\DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
+\newcommand{\irchi}[2]{\raisebox{\depth}{$#1\chi$}}
+\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{#1}
+
+
+\usepackage{array,booktabs,arydshln,xcolor}
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+%\usepackage{hyperref}
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\newcommand{\supersc}[1]{\texorpdfstring{\textsuperscript{#1}}{}}
+
+
+
+\title[Tadipatri Uday Kiran Reddy]{ADCs for Direct RF Sampling}
+\author{Tadipatri Uday Kiran Reddy - EE19BTECH11038}
+\institute[]{IIT Hyderabad}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+\begin{figure}
+	\includegraphics[scale=0.2]{./figs/arch.png}
+\end{figure}
+\pause
+\begin{itemize}
+	\item ADC architecture for sampling at RF with low power and area.
+	\pause
+	\item High sampling rate with relatively slow circuits, \textit{Time-Interleaved ADC}.
+	\pause
+	\item Minimize quantisation and noise error.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Motivation for RF sampling}
+\begin{figure}
+	\includegraphics[scale=0.2]{./figs/rf_arch.png}
+\end{figure}
+\begin{itemize}
+	\item Simpler hardware design due to elimination of analog frequency conversion.
+	\pause
+	\item Exploit the computing power of DSPs.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Analog-to-Digital Converters}
+
+\end{frame}
+
+\begin{frame}{Time-Interleaved ADC}
+
+\end{frame}
+
+\begin{frame}{Challenges}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{}
+\centering
+ \Huge
+ Thank You
+\end{frame}
+\end{document}
