@@ -237,14 +237,10 @@
 			SQNR = 6.02ENOB + 1.76 dB
 		\end{equation*}
 		\pause
-		Noise spectral density is constant!
-		\pause		
 		\item Oversampled Converters, very high sampling rate, $OSR = \frac{f_s}{2f_B}$
 		\begin{equation*}
 			SQNR = 6.02ENOB + 1.76 + 10log(OSR)dB
 		\end{equation*}
-		\pause
-		Noise spectral density at ROI is less!!
 	\end{itemize}
 \end{frame}
 
@@ -271,7 +267,7 @@
 \end{itemize}
 \end{figure}
 \end{frame}
-\begin{frame}{Time-Interleaved ADC}
+\begin{frame}{Time-Interleaved ADC\footnote[frame]{N. Kurosawa \textit{et al.}, "Explicit analysis of channel mismatch effects in time-interleaved ADC systems," in IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications, vol. 48, no. 3, pp. 261-271, March 2001, doi: 10.1109/81.915383.}}
 \begin{figure}
 	\includegraphics[scale=0.25]{./figs/tiadc.png}
 \end{figure}
@@ -283,7 +279,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Analysis of ADC based on VCO}
+\begin{frame}{Analysis of ADC based on VCO \footnote[frame]{Y. Yoon \textit{et al.}, "A Time-Based Bandpass ADC Using Time-Interleaved Voltage-Controlled Oscillators," in IEEE Transactions on Circuits and Systems I: Regular Papers}}
 \begin{figure}
 	\includegraphics[scale=0.3]{./figs/Vco .png}
 \end{figure}
@@ -336,8 +332,9 @@
 
 \begin{frame}{Which Zero to center at?}
 \begin{figure}
-	\includegraphics[scale=0.3]{./figs/Bwplot.png}
+	\includegraphics[scale=0.2]{./figs/Bwplot.png}
 \end{figure}
+\pause
 \vspace{-0.5cm}
 \begin{itemize}
 	\item At $\omega = 0 or \pi$,
@@ -346,13 +343,15 @@
 		SQNR = 6.02ENOB - 3.41 + 30log(OSR)dB
 	\end{equation*}
 	\vspace{-1cm}
+	\pause
 	\item At intermediate zeroes,
 	\vspace{-0.6cm}
 	\begin{equation*}
 		SQNR = 6.02ENOB - 3.41 + 6.02 + 30log(OSR)dB
 	\end{equation*}
-	\vspace{-1.3cm}
+	\vspace{-1cm}
 \end{itemize}
+	\pause
 	Increase of 6.02dB is equivalent to increase in 1-bit precision of ADC!!
 \end{frame}
 
@@ -424,6 +423,14 @@
 \end{figure}
 \end{frame}
 
+\begin{frame}{References}
+\begin{itemize}
+	\item N. Kurosawa \textit{et al.}, "Explicit analysis of channel mismatch effects in time-interleaved ADC systems," in IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications.
+	\item Y. Yoon \textit{et al.}, "A Time-Based Bandpass ADC Using Time-Interleaved Voltage-Controlled Oscillators," in IEEE Transactions on Circuits and Systems I: Regular Papers
+	\item Joonhee Lee \textit{et al.}, "A 1.8 to 2.4-GHz 20mW digital-intensive RF sampling receiver with a noise-canceling bandpass low-noise amplifier in 90nm CMOS," 2010 IEEE Radio Frequency Integrated Circuits Symposium.
+	\item Advantages of Direct RF Sampling Architectures, by www.ni.com
+\end{itemize}
+\end{frame}
 \begin{frame}{}
 \centering
  \Huge
