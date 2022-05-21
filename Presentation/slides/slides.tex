@@ -187,10 +187,10 @@
 
 
 
-\title[Tadipatri Uday Kiran Reddy]{ADCs for Direct RF Sampling}
-\author{Tadipatri Uday Kiran Reddy - EE19BTECH11038}
+\title[ADCs for Direct RF Sampling]{ADCs for Direct RF Sampling}
+\author[Tadipatri Uday Kiran Reddy]{Tadipatri Uday Kiran Reddy - EE19BTECH11038}
 \institute[]{IIT Hyderabad}
-\date{\today}
+\date{ICWC Presentation}
 
 \begin{document}
 \begin{frame}
@@ -205,7 +205,7 @@
 \begin{itemize}
 	\item ADC architecture for sampling at RF with low power and area.
 	\pause
-	\item High sampling rate with relatively slow circuits, \textit{Time-Interleaved ADC}.
+	\item High sampling rate with relatively slow circuits with more bandwidth, \textit{Time-Interleaved ADC}.
 	\pause
 	\item Minimize quantisation and noise error.
 \end{itemize}
@@ -330,21 +330,21 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{Which Zero to center at?}
+\begin{frame}{Where do we center our signal?}
 \begin{figure}
 	\includegraphics[scale=0.2]{./figs/Bwplot.png}
 \end{figure}
 \pause
 \vspace{-0.5cm}
 \begin{itemize}
-	\item At $\omega = 0 or \pi$,
+	\item As low pass signal,
 	\vspace{-0.5cm}
 	\begin{equation*}
 		SQNR = 6.02ENOB - 3.41 + 30log(OSR)dB
 	\end{equation*}
 	\vspace{-1cm}
 	\pause
-	\item At intermediate zeroes,
+	\item At zeroes,
 	\vspace{-0.6cm}
 	\begin{equation*}
 		SQNR = 6.02ENOB - 3.41 + 6.02 + 30log(OSR)dB
@@ -421,6 +421,29 @@
 \begin{figure}
 	\includegraphics[scale=0.25]{./figs/Over.png}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Area comparisions}
+	\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+      Metrics                 & 3x ADS7056 & THS1408 \\
+                       \hline
+                       \hline
+Resolution             & 14-bit     & 14-bit  \\
+\hline
+Sampling rate          & 7.5 MSPS   & \textbf{8 MSPS}  \\
+\hline
+SQNR (dB)              & \textbf{73}         & 72      \\
+\hline
+Power consumption (mW) & \textbf{17.5}       & 270    \\
+\hline
+Package	area ($mm^2$) & \textbf{6.75} & 81\\
+\hline
+\end{tabular}
+\end{table}
+\textit{
+\textbf{DataSheet by TI}}
 \end{frame}
 
 \begin{frame}{References}
